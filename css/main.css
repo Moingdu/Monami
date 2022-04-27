@@ -1,0 +1,221 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+* {margin:0; padding:0;}
+li {list-style: none;}
+body, html {overflow-x:hidden;}
+a {text-decoration:none; display:block; color:black; font-family: 'Noto Sans KR', sans-serif;}
+header, section, footer {width:100%; float:left;}
+header, section, footer, div {box-sizing: border-box; display: block;}
+section {height:calc(100vh-280px);}
+body {font-size:15px; font-family: 'Noto Sans KR', sans-serif;}
+img {width:100%;}
+.all_menu {width:100%; height:100vh; background-color: #fff; position:absolute; z-index: 1000; overflow-y:hidden; margin:0 auto;  box-sizing: border-box; right:-1920px;}
+.all_menu .allmenu_left {width:37%; height:100vh; background-color: #000; position:absolute;  box-sizing: border-box;}
+.all_menu .allmenu_left .img {width:100%; height:100vh; position:absolute; box-sizing: border-box;}
+.all_menu .allmenu_left .img div {box-sizing: border-box; width:100%; height:100vh; float:left; position:absolute; z-index: 1;}
+.all_menu .allmenu_left .img .one {width:100%; height:100vh; box-sizing: border-box; overflow: hidden;}
+.all_menu .allmenu_left .img .one .one_sub {background-image: url(../img/pen.webp); background-size:cover; background-position: center; opacity: 40%; transition: all 0.8s;}
+.all_menu .allmenu_left .img .two {width:100%; height:100vh; box-sizing: border-box; overflow: hidden;}
+.all_menu .allmenu_left .img .two .two_sub {background-image: url(../img/maka.jpg); background-size:cover; background-position: center; opacity: 40%; display: none; transition: all 0.8s;}
+.all_menu .allmenu_left .img .three {width:100%; height:100vh; box-sizing: border-box; overflow: hidden;}
+.all_menu .allmenu_left .img .three .three_sub {background-image: url(../img/paint.jpg); background-size:cover; background-position: right; opacity: 40%; display: none; transition: all 0.8s;}
+.all_menu .allmenu_left .img .four {width:100%; height:100vh; box-sizing: border-box; overflow: hidden;}
+.all_menu .allmenu_left .img .four .four_sub {background-image: url(../img/etc.png); background-size:cover; background-position:left; opacity: 40%; display: none; transition: all 0.8s;}
+.all_menu .allmenu_left .menu_list {width:100%; margin:0 auto; position:absolute; z-index: 10;}
+.all_menu .allmenu_left .menu_list a {color:rgb(161, 161, 161);}
+.all_menu .allmenu_left .menu_list > ul > li > p {width:200px; border-bottom: 2px solid #000; margin-left:90px; margin-top:-50px; padding-top:28px; position:absolute; transition: all 0.8s;}
+.all_menu .allmenu_left .menu_list > ul > li:nth-child(2) p,
+.all_menu .allmenu_left .menu_list > ul > li:nth-child(3) p {width:180px; border-bottom: 2px solid #000; margin-left:110px;}
+.all_menu .allmenu_left .menu_list > ul {padding-top:150px; margin-left:80px;}
+.all_menu .allmenu_left .menu_list > ul > li {padding-top:30px; position:relative;}
+.all_menu .allmenu_left .menu_list > ul > li > a {font-size: 35px; display: inline;}
+.all_menu .allmenu_left .menu_list > ul > li > a:hover {color:#fff;}
+.all_menu .allmenu_left .menu_list .sub {float:left; margin-top:-40px; margin-left:320px; position:absolute; z-index: 15;}
+.all_menu .allmenu_left .menu_list .sub li a {font-size: 18px; color:#fff; padding-bottom:10px;}
+.all_menu .allmenu_right {width:63%; height:100vh; float:right;}
+.all_menu .allmenu_right .close_button img {width:30px; float:right; margin:80px 50px;}
+.all_menu .allmenu_right .right_nav {width:100%; float:left;}
+.all_menu .allmenu_right .right_nav h1 {font-size: 22px;}
+.all_menu .allmenu_right .right_nav .n_sub a{font-size: 17px; color:#666}
+.all_menu .allmenu_right .right_nav > ul {margin-left:100px;}
+.all_menu .allmenu_right .right_nav > ul > li {float:left; margin-right:110px; margin-bottom:150px; position:relative; height:100px; width:120px;}
+.all_menu .allmenu_right .right_nav > ul > li:nth-child(5) {margin-right:0;}
+.all_menu .allmenu_right .right_nav .n_sub li {margin-top:15px;}
+.all_menu .allmenu_right .right_nav .n_sub li a:hover {color:red;}
+.all_menu .allmenu_right .right_banner {width:100%;}
+.all_menu .allmenu_right .right_banner ul {margin-left: 120px;}
+.all_menu .allmenu_right .right_banner ul li {float:left; margin-right:30px;  margin-top:70px;}
+.all_menu .allmenu_right .right_banner img {width:300px; border:1px solid #ccc;}
+.all_menu .allmenu_right .right_banner img:hover {border:2px solid red;}
+header .up_menu {margin:0 auto; width:1760px;}
+header .up_menu .box {float:right;}
+header .up_menu .box > div {float:left;}
+header .up_menu .box .upleft ul li {float:left; font-size: 15px; margin:15px;}
+header .up_menu .box .upright ul li {float:left; margin-top:15px;}
+header .up_menu .box .upright .h1 {width: 18px; margin-top:3px; margin-left:20px;}
+header .up_menu .box .upright .h2 {width: 20px; margin-top:1px; margin-left:10px;}
+header .down_menu {margin:0 auto; width:1760px; margin-top:70px; z-index: 10; position:relative;}
+header .down_menu .logo {position:absolute; left:50%; transform: translateX(-50%); margin-top:-25px;}
+header .down_menu .logo img {width:150px;}
+header .down_menu .menu1 nav > ul > li {float:left; margin-right:60px;}
+header .down_menu .menu1 nav > ul > li > a {font-size: 20px; margin-bottom:10px;}
+header .down_menu .menu1 nav > ul {float:left;}
+header .down_menu .menu2 nav > ul {float:right;}
+header .down_menu .menu2 nav > ul > li {float:left; margin-right:60px;}
+header .down_menu .menu2 nav > ul > li > a {font-size: 20px; margin-bottom:10px;}
+header .down_menu .sub {display:none; position:absolute;}
+header .down_menu .sub li a {padding:7px 0; position:relative;}
+header .down_menu .menu2 {float:right;}
+header .down_menu .menu2 nav {float:left;}
+header .down_menu .icon {float:right;}
+header .down_menu .icon ul li {float:left; margin-left:30px;}
+header .down_menu .icon img {width:30px;}
+header .down_menu nav li:hover > a {color:red;}
+header .down_menu nav .sub li a:hover {color:red;}
+header .sub_bg {background-color: blanchedalmond; position:absolute; left:0; top:110px; width:100%; height:290px; box-shadow:0px 2px 3px #ddd; display:none; z-index: 2;}
+header .search {width:100%; position:absolute; background-color: #fff; height:230px; top:105px; z-index: 15; display:none;}
+header .search .search_in a {width:20px; float:right;}
+header .search .search_in {width:650px; margin:80px auto; border-bottom:2px solid #111; height:75px;}
+header .search .search_in img {float:right; margin-top:35px;}
+header .search .search_in input {width:500px; float:left; font-size:20px; margin-top:20px; margin-left:10px; padding:15px 0; display:block; border:none;}
+header .search input:focus {outline:none;}
+header .search > a {margin:0 auto; float:none; width:40px; z-index: 15; display:block;}
+section .visual {width:100%; height:660px; margin:160px 0;}
+section .visual .visual_box {width:1760px; height:660px; margin:0 auto; overflow:hidden; position:relative;}
+section .visual .visual_box .box {width:1760px; height:660px; background-color: #000; position:absolute; opacity: 70%; z-index: 1;}
+section .visual .visual_box ul {position:absolute; width:10000px; left:-1760px;}
+section .visual .visual_box ul li {float:left; width:1760px; height: 660px;}
+section .visual .visual_box ul .first_visual {background-image: url(../img/b1.jpg); background-size:cover; background-position: center; color:#fff;}
+section .visual .visual_box ul .second_visual {background-image: url(../img/b2.jpg); background-size:cover; background-position: center; color:#fff;}
+section .visual .visual_box ul .third_visual {background-image: url(../img/b3.jpg); background-size:cover; background-position: center; color:#fff;}
+section .visual .visual_box ul li .text {position:absolute; z-index: 10;}
+section .visual .left_btn {width:60px; left:0; top:65%; position:absolute; cursor: pointer;}
+section .visual .right_btn {width:60px; right:0; bottom:30%; position:absolute; cursor: pointer;}
+section .visual .visual_box .first_visual .first_text h1 {font-size: 50px; margin:130px 120px 0;}
+section .visual .visual_box .first_visual .first_text p {font-size: 20px; margin: 50px 120px;}
+section .visual .visual_box .second_visual .second_text h1 {font-size: 50px;  margin:130px 1070px 0; text-align: right;}
+section .visual .visual_box .second_visual .second_text p {font-size: 20px; margin:50px 1070px; text-align: right;}
+section .visual .visual_box .third_visual .third_text h1 {font-size: 50px; margin:130px 1300px 0; text-align: right;}
+section .visual .visual_box .third_visual .third_text p {font-size: 20px; margin:50px 1300px; text-align:right;}
+section .first_banner {width:1760px; margin:0 auto;}
+section .first_banner .tab_header h1 {font-size: 40px; text-align: center;}
+section .first_banner .tab_title {padding-top:300px; font-size: 20px; float:left; position:absolute;}
+section .first_banner .tab_title ul li {margin-bottom:40px; cursor: pointer;}
+section .first_banner .tab_title ul li p.active {font-size:30px; color:red;}
+section .first_banner .tab_video {width: 670px; height:870px; overflow: hidden; margin:0 auto; position:relative; margin-bottom:160px;}
+section .first_banner .tab_video ul li {width:670px; height:870px; overflow: hidden; display: flex; justify-content: center; float:left;}
+section .first_banner .tab_video ul {width:10000px; position: absolute; margin:0 auto;}
+section .first_banner .tab_video video {width: 200%;}
+section .first_banner .tab_text {width:25%; top:-800px; float:right; position:relative;}
+section .first_banner .tab_text ul li {width:100%; height:800px; position:absolute; background-color: #fff; opacity:0;}
+section .first_banner .tab_text ul li:first-child {top:0; opacity:1;}
+section .first_banner .tab_text h1 {font-size: 30px; margin-bottom:50px;}
+section .first_banner .tab_text p {font-size: 15px;}
+section .second_banner {width:1760px; margin:0 auto;}
+section .second_banner .new_wrap,
+section .second_banner .best_wrap {width:1450px; height:660px; position: relative; margin-left:-78px;}
+section .second_banner .new .new_lbtn {width:60px; left:0; top:280%; position:absolute; cursor: pointer; z-index: 10;}
+section .second_banner .new .new_rbtn {width:60px; right:0; top:280%; position:absolute; cursor: pointer; z-index: 10;}
+section .second_banner .best .best_lbtn {width:60px; left:0; top:280%; position:absolute; cursor: pointer; z-index: 10;}
+section .second_banner .best .best_rbtn {width:60px; right:0; top:280%; position:absolute; cursor: pointer; z-index: 10;}
+section .second_banner .tab_header h1 {font-size: 40px; position: absolute; left:50%; transform: translateX(-50%);}
+section .second_banner .tab_menu {position: absolute; left:50%; transform: translateX(-50%);}
+section .second_banner .tab_menu ul li p.active {color:red;}
+section .second_banner .tab_menu ul li {float:left; font-size:25px; margin:80px 0 0 0; padding:0 20px; cursor: pointer;}
+section .second_banner .tab_menu ul li:first-child {border-right:1px solid #000;}
+section .second_banner .new {width:1450px; margin:0 auto; padding-top:130px; z-index: 1;}
+section .second_banner .new ul {width:10000px; position:absolute;}
+section .second_banner .new ul li {width:1450px; height:660px; float:left;}
+section .second_banner .best {width:1450px; margin:0 auto; padding-top:130px; z-index: 1;}
+section .second_banner .best ul {width:10000px; position:absolute;}
+section .second_banner .best ul li {width:1450px; height:660px; float:left;}
+section .second_banner .new .new_wrap .first_new {background-image: url(../img/p1.png); background-size: cover; background-position: center;}
+section .second_banner .new .new_wrap .second_new {background-image: url(../img/p2.png); background-size: cover; background-position: center;}
+section .second_banner .new .new_wrap .third_new {background-image: url(../img/P3.png); background-size: cover; background-position: center;}
+section .second_banner .best .best_wrap .first_best {background-image: url(../img/p4.jpg); background-size: cover; background-position: center;}
+section .second_banner .best .best_wrap .second_best {background-image: url(../img/p5.jpg); background-size: cover; background-position: center;}
+section .second_banner .best .best_wrap .third_best {background-image: url(../img/p6.jpg); background-size: cover; background-position: center;}
+section .second_banner .scrollbar {width:1470px; height:10px; margin:0 auto; margin-top:50px; background-color: #ccc; border-radius: 5px; position:relative;}
+section .second_banner .scrollbar .mini_scrollbar {width:490px; height:10px; float:left; position:absolute; background-color: red; border-radius: 5px;}
+section .second_banner .new .new_wrap ul li,
+section .second_banner .best .best_wrap ul li {margin-right:80px;}
+section .second_banner .new .new_wrap ul li h1,
+section .second_banner .best .best_wrap ul li h1 {font-size: 40px; margin:80px 0 0 80px;}
+section .second_banner .new .new_wrap ul li p,
+section .second_banner .best .best_wrap ul li p {font-size: 15px; margin:30px 0 0 80px;}
+section .second_banner .new .new_wrap ul li button,
+section .second_banner .best .best_wrap ul li button {font-size: 15px; padding:8px 20px; text-align: center; margin: 50px 0 0 80px; border-color: red; cursor: pointer; transition:all 0.9s;}
+section .second_banner .best .best_wrap ul li button:hover,
+section .second_banner .new .new_wrap ul li button:hover {box-shadow:0 0 0 220px rgb(255, 0, 0) inset; color:#fff;}
+section .third_banner {width:1450px; margin:0 auto;}
+section .third_banner .tab_header {margin-top:200px;}
+section .third_banner .tab_header h1 {font-size: 40px; text-align: center; margin-bottom:50px;}
+section .third_banner .tab_title {float:left; width:330px; font-size: 25px; margin-top:400px;}
+section .third_banner .photo {width:770px; height:780px; position:relative; overflow:hidden;}
+section .third_banner .photo ul {width:10000px; position:absolute;}
+section .third_banner .photo ul li {width:770px; height:780px; float:left;}
+section .third_banner .photo .first_photo {background-image: url(../img/e1.png); background-size: cover; background-position: center;}
+section .third_banner .photo .second_photo {background-image: url(../img/e2.jpg); background-size: cover; background-position: center;}
+section .third_banner .photo .third_photo {background-image: url(../img/e3.png); background-size: cover; background-position: center;}
+section .third_banner .photo {float:left;}
+section .third_banner .photo_menu {float:right;}
+section .third_banner .photo_menu ul li {margin-top:100px; padding-bottom:100px; border-bottom: 1px solid #ccc; cursor: pointer;}
+section .third_banner .photo_menu ul li:last-child {border:none;}
+section .third_banner .photo_menu ul li.active {color:red;}
+section .forth_banner {width:1450px; margin:0 auto;}
+section .forth_banner .sns_title {margin-top:1000px;}
+section .forth_banner .sns_title h1 {font-size: 40px; text-align: center;}
+section .forth_banner .sns_photo {margin-top:100px; float: left;}
+section .forth_banner .sns_photo ul li img {width:100%; height:100%; transition: all 1.5s}
+section .forth_banner .sns_photo ul li {width:320px; height:320px; box-sizing: border-box; float:left; margin-right:56px; margin-bottom:50px; overflow:hidden;}
+section .forth_banner .sns_photo ul li:nth-child(4) {margin-right:0;}
+section .forth_banner .sns_photo ul li:last-child {margin-right:0;}
+section .forth_banner .sns_photo ul li:hover img {transform:scale(1.2);}
+section .forth_banner .sns_imoticon ul {margin-left:460px;}
+section .forth_banner .sns_imoticon ul li {width:35px; height:35px; float:left; margin-left:80px;}
+section .fifth_banner {width:1920px; margin:0 auto;}
+section .fifth_banner .map iframe {width:1920px; height:500px; margin-top:160px;}
+section .fifth_banner .map_imoticon {width:1450px;}
+section .fifth_banner .map_imoticon img {width:70px; height:70px; margin-left:13px;}
+section .fifth_banner .map_imoticon ul li:last-child img {margin-left:23px;}
+section .fifth_banner .map_imoticon ul li {float:left; margin-top: 30px; padding: 0 100px; border-right: 1px solid #ccc;}
+section .fifth_banner .map_imoticon ul li:last-child {border:none;}
+section .fifth_banner .map_imoticon ul {margin-left: 140px;}
+section .fifth_banner .map_imoticon ul li p {font-size:20px; text-align: left;}
+section .sixth_banner {width:1920px; margin:0 auto; margin-top: 300px;}
+section .sixth_banner .left_box {width:960px; height:400px; float:left; background-color: rgb(235, 235, 235);}
+section .sixth_banner .left_box ul {margin: 150px 0px 0 280px;}
+section .sixth_banner .left_box ul li {float:left; margin-right:70px;}
+section .sixth_banner .left_box h1 {font-size: 15px;}
+section .sixth_banner .left_box p {font-size: 40px; margin-top:25px;}
+section .sixth_banner .left_box span {color:rgb(100, 100, 100);}
+section .sixth_banner .right_box {width:960px; height:400px; float:right;}
+section .sixth_banner .right_box p {font-size: 30px; margin:90px 0 0 100px;}
+section .sixth_banner .right_box .store_button {margin: 20px 0 0 100px;}
+section .sixth_banner .right_box .store_button button {padding:15px 25px; border-color: red; cursor: pointer; transition:all 0.9s; background-color: #fff;}
+section .sixth_banner .right_box .store_button button:hover {box-shadow:0 0 0 220px rgb(255, 0, 0) inset; color:#fff;}
+section .sixth_banner .right_box .more {margin:80px 0 0 100px; display: block; letter-spacing: 5px; float:left; color:#666;}
+section .sixth_banner .right_box .more:after {content: ""; display: block; width: 30px; height: 1px; background: #666666; margin-left:70px; margin-top:-9px;}
+section .sixth_banner .top_btn span {margin-left:25px;}
+section .sixth_banner .top_btn {float:right; margin-right:18px; margin-top:-110px; cursor: pointer;}
+section .sixth_banner .top_btn .box {background-color: #ccc; width:80px; height:80px; margin-top:15px; transition: all 0.5s;}
+section .sixth_banner .top_btn .box .width p {width:50px; border-bottom: 2px solid #111; margin-top:38px; margin-left:14px; position: absolute;}
+section .sixth_banner .top_btn .box .height p {height:50px; border-left: 2px solid #111; margin-left:40px; margin-top: 15px; position: absolute;}
+section .sixth_banner .top_btn p { border-left: 2px solid #111;}
+section .sixth_banner .top_btn .box:hover {background-color: red;}
+section .sixth_banner .top_btn .box:hover p {border-color: #fff;}  
+section .sixth_banner .top_btn.active {position:fixed; bottom:0%; right:0; margin-right:0;}
+footer .footer_box {width:1760px; height:200px; margin:0 auto;}
+footer .footer_box .footer_left {width:800px;}
+footer .footer_box .footer_left .footer_top {margin:0 auto;}
+footer .footer_box .footer_left .footer_top ul li {float:left; margin-top:40px; margin-right:20px;}
+footer .footer_box .footer_left .footer_top ul li:nth-child(3) a {font-size:17px; color:red; margin-top:-2px;}
+footer .footer_box .footer_left address {float:left; margin-top:20px;}
+footer .footer_box .footer_left address p {margin-top:5px; color:#666;}
+footer .footer_box .footer_right img {width:40px; position:absolute; right:10px; margin-top: -5px;}
+footer .footer_box .footer_right {float:right; margin-top:15px; font-size:18px;}
+footer .footer_box .footer_right  a {position:relative;}
+footer .footer_box .footer_right  a:after {content:""; display:block; width: 300px; height:2px; background-color: #000; margin-top:15px;}
+footer .footer_box .familysite {display:none;}
+footer .footer_box .familysite ul {background-color: #000; z-index: 10; width:300px; position:absolute; right:3.75%; margin-top:-61px;}
+footer .footer_box .familysite ul li a {color:#fff; padding:12px 0; padding-left:25px;}
+footer .footer_box .familysite img { width:40px; right:3.75%; margin-top:81px; position:absolute; z-index: 15;}

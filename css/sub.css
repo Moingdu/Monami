@@ -1,0 +1,133 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+* {margin:0; padding:0;}
+li {list-style: none;}
+body, html {overflow-x:hidden;}
+a {text-decoration:none; display:block; color:black; font-family: 'Noto Sans KR', sans-serif;}
+header, section, footer {width:100%; float:left;}
+header, section, footer, div {box-sizing: border-box; display: block;}
+section {height:calc(100vh-280px);}
+body {font-size:15px; font-family: 'Noto Sans KR', sans-serif;}
+img {width:100%;}
+.all_menu {width:100%; height:100vh; background-color: #fff; position:absolute; z-index: 1000; overflow-y:hidden; margin:0 auto;  box-sizing: border-box; right:-1920px;}
+.all_menu .allmenu_left {width:37%; height:100vh; background-color: #000; position:absolute;  box-sizing: border-box;}
+.all_menu .allmenu_left .img {width:100%; height:100vh; position:absolute; box-sizing: border-box;}
+.all_menu .allmenu_left .img div {box-sizing: border-box; width:100%; height:100vh; float:left; position:absolute; z-index: 1;}
+.all_menu .allmenu_left .img .one {width:100%; height:100vh; box-sizing: border-box; overflow: hidden;}
+.all_menu .allmenu_left .img .one .one_sub {background-image: url(../img/pen.webp); background-size:cover; background-position: center; opacity: 40%; transition: all 0.8s;}
+.all_menu .allmenu_left .img .two {width:100%; height:100vh; box-sizing: border-box; overflow: hidden;}
+.all_menu .allmenu_left .img .two .two_sub {background-image: url(../img/maka.jpg); background-size:cover; background-position: center; opacity: 40%; display: none; transition: all 0.8s;}
+.all_menu .allmenu_left .img .three {width:100%; height:100vh; box-sizing: border-box; overflow: hidden;}
+.all_menu .allmenu_left .img .three .three_sub {background-image: url(../img/paint.jpg); background-size:cover; background-position: right; opacity: 40%; display: none; transition: all 0.8s;}
+.all_menu .allmenu_left .img .four {width:100%; height:100vh; box-sizing: border-box; overflow: hidden;}
+.all_menu .allmenu_left .img .four .four_sub {background-image: url(../img/etc.png); background-size:cover; background-position:left; opacity: 40%; display: none; transition: all 0.8s;}
+.all_menu .allmenu_left .menu_list {width:100%; margin:0 auto; position:absolute; z-index: 10;}
+.all_menu .allmenu_left .menu_list a {color:rgb(161, 161, 161);}
+.all_menu .allmenu_left .menu_list > ul > li > p {width:200px; border-bottom: 2px solid #000; margin-left:90px; margin-top:-50px; padding-top:28px; position:absolute; transition: all 0.8s;}
+.all_menu .allmenu_left .menu_list > ul > li:nth-child(2) p,
+.all_menu .allmenu_left .menu_list > ul > li:nth-child(3) p {width:180px; border-bottom: 2px solid #000; margin-left:110px;}
+.all_menu .allmenu_left .menu_list > ul {padding-top:150px; margin-left:80px;}
+.all_menu .allmenu_left .menu_list > ul > li {padding-top:30px; position:relative;}
+.all_menu .allmenu_left .menu_list > ul > li > a {font-size: 35px; display: inline;}
+.all_menu .allmenu_left .menu_list > ul > li > a:hover {color:#fff;}
+.all_menu .allmenu_left .menu_list .sub {float:left; margin-top:-40px; margin-left:320px; position:absolute; z-index: 15;}
+.all_menu .allmenu_left .menu_list .sub li a {font-size: 18px; color:#fff; padding-bottom:10px;}
+.all_menu .allmenu_right {width:63%; height:100vh; float:right;}
+.all_menu .allmenu_right .close_button img {width:30px; float:right; margin:80px 50px;}
+.all_menu .allmenu_right .right_nav {width:100%; float:left;}
+.all_menu .allmenu_right .right_nav h1 {font-size: 22px;}
+.all_menu .allmenu_right .right_nav .n_sub a{font-size: 17px; color:#666}
+.all_menu .allmenu_right .right_nav > ul {margin-left:100px;}
+.all_menu .allmenu_right .right_nav > ul > li {float:left; margin-right:110px; margin-bottom:150px; position:relative; height:100px; width:120px;}
+.all_menu .allmenu_right .right_nav > ul > li:nth-child(5) {margin-right:0;}
+.all_menu .allmenu_right .right_nav .n_sub li {margin-top:15px;}
+.all_menu .allmenu_right .right_nav .n_sub li a:hover {color:red;}
+.all_menu .allmenu_right .right_banner {width:100%;}
+.all_menu .allmenu_right .right_banner ul {margin-left: 120px;}
+.all_menu .allmenu_right .right_banner ul li {float:left; margin-right:30px;  margin-top:70px;}
+.all_menu .allmenu_right .right_banner img {width:300px; border:1px solid #ccc;}
+.all_menu .allmenu_right .right_banner img:hover {border:2px solid red;}
+header {height:540px; background-image: url(../img/sub-header.png); margin-bottom:160px;}
+header .up_menu {margin:0 auto; width:1760px;}
+header .up_menu .box {float:right;}
+header .up_menu .box > div {float:left;}
+header .up_menu .box .upleft ul li {float:left; font-size: 15px; margin:15px;}
+header .up_menu .box .upright ul li {float:left; margin-top:15px;}
+header .up_menu .box .upright .h1 {width: 18px; margin-top:3px; margin-left:20px;}
+header .up_menu .box .upright .h2 {width: 20px; margin-top:1px; margin-left:10px;}
+header .down_menu {margin:0 auto; width:1760px; margin-top:70px; z-index: 10; position:relative;}
+header .down_menu .logo {position:absolute; left:50%; transform: translateX(-50%); margin-top:-25px;}
+header .down_menu .logo img {width:150px;}
+header .down_menu .menu1 nav > ul > li {float:left; margin-right:60px;}
+header .down_menu .menu1 nav > ul > li > a {font-size: 20px; margin-bottom:10px;}
+header .down_menu .menu1 nav > ul {float:left;}
+header .down_menu .menu2 nav > ul {float:right;}
+header .down_menu .menu2 nav > ul > li {float:left; margin-right:60px;}
+header .down_menu .menu2 nav > ul > li > a {font-size: 20px; margin-bottom:10px;}
+header .down_menu .sub {display:none; position:absolute;}
+header .down_menu .sub li a {padding:7px 0; position:relative;}
+header .down_menu .menu2 {float:right;}
+header .down_menu .menu2 nav {float:left;}
+header .down_menu .icon {float:right;}
+header .down_menu .icon ul li {float:left; margin-left:30px;}
+header .down_menu .icon img {width:30px;}
+header .down_menu nav li:hover > a {color:red;}
+header .down_menu nav .sub li a:hover {color:red;}
+header .sub_bg {background-color: blanchedalmond; position:absolute; left:0; top:110px; width:100%; height:290px; box-shadow:0px 2px 3px #ddd; display:none; z-index: 2;}
+header .search {width:100%; position:absolute; background-color: #fff; height:230px; top:105px; z-index: 15; display:none;}
+header .search .search_in a {width:20px; float:right;}
+header .search .search_in {width:650px; margin:80px auto; border-bottom:2px solid #111; height:75px;}
+header .search .search_in img {float:right; margin-top:35px;}
+header .search .search_in input {width:500px; float:left; font-size:20px; margin-top:20px; margin-left:10px; padding:15px 0; display:block; border:none;}
+header .search input:focus {outline:none;}
+header .search > a {margin:0 auto; float:none; width:40px; z-index: 15; display:block;}
+header .title {width:1920px; margin:0 auto;}
+header .title h1 {margin-top:180px; margin-left:500px; font-size: 50px;}
+header .title p {margin-left:500px; font-size: 50px;}
+section .img {width:1460px; height:800px;}
+section h1 {font-size: 25px;}
+section p {font-size: 20px; color:#666;}
+section button {padding:8px 20px; text-align: center; margin-top:70px; border-color: red; cursor: pointer; transition:all 0.9s; background-color: #fff;}
+section button:hover {box-shadow:0 0 0 220px rgb(255, 0, 0) inset; color:#fff;}
+section .first_sec .img {background-image: url(../img/sub1.png); background-size:cover; background-position: center;}
+section .second_sec .img {background-image: url(../img/sub2.png); background-size:cover; background-position: center; float:right;}
+section .third_sec .img {background-image: url(../img/sub3.png); background-size:cover; background-position: center;}
+section .fourth_sec .img {background-image: url(../img/sub4.png); background-size:cover; background-position: center; float:right;}
+section .fifth_sec .img {background-image: url(../img/sub5.png); background-size:cover; background-position: center;}
+section > div{height:1500px; width:1920px; float:left;}
+section .first_sec .title {float:left; margin-top:80px; margin-left:240px;}
+section .first_sec .title p {margin-top:20px;}
+section .first_sec .info {margin-top:80px; margin-left:550px;}
+section .first_sec .info p{margin-top:80px;}
+section .second_sec {float:right; width:1460px;}
+section .second_sec .title {float:right; margin-top:80px; margin-right:240px; text-align: right;}
+section .second_sec .title p {margin-top:20px;}
+section .second_sec .info {float:right; margin-top:80px; margin-right:200px; text-align: right;}
+section .second_sec .info p {margin-top:80px;}
+section .third_sec .title {float:left; margin-top:80px; margin-left:240px;}
+section .third_sec .title p {margin-top:20px;}
+section .third_sec .info {margin-top:80px; margin-left:550px;}
+section .third_sec .info p{margin-top:80px;}
+section .fourth_sec {float:right; width:1460px;}
+section .fourth_sec .title {float:right; margin-top:80px; margin-right:240px; text-align: right;}
+section .fourth_sec .title p {margin-top:20px;}
+section .fourth_sec .info {float:right; margin-top:80px; margin-right:200px; text-align: right;}
+section .fourth_sec .info p {margin-top:80px;}
+section .fifth_sec .title {float:left; margin-top:80px; margin-left:240px;}
+section .fifth_sec .title p {margin-top:20px;}
+section .fifth_sec .info {margin-top:80px; margin-left:550px;}
+section .fifth_sec .info p{margin-top:80px;}
+footer .footer_box {width:1760px; height:200px; margin:0 auto;}
+footer .footer_box .footer_left {width:800px;}
+footer .footer_box .footer_left .footer_top {margin:0 auto;}
+footer .footer_box .footer_left .footer_top ul li {float:left; margin-top:40px; margin-right:20px;}
+footer .footer_box .footer_left .footer_top ul li:nth-child(3) a {font-size:17px; color:red; margin-top:-2px;}
+footer .footer_box .footer_left address {float:left; margin-top:20px;}
+footer .footer_box .footer_left address p {margin-top:5px; color:#666;}
+footer .footer_box .footer_right img {width:40px; position:absolute; right:10px; margin-top: -5px;}
+footer .footer_box .footer_right {float:right; margin-top:15px; font-size:18px;}
+footer .footer_box .footer_right  a {position:relative;}
+footer .footer_box .footer_right  a:after {content:""; display:block; width: 300px; height:2px; background-color: #000; margin-top:15px;}
+footer .footer_box .familysite {display:none;}
+footer .footer_box .familysite ul {background-color: #000; z-index: 10; width:300px; position:absolute; right:3.75%; margin-top:-61px;}
+footer .footer_box .familysite ul li a {color:#fff; padding:12px 0; padding-left:25px;}
+footer .footer_box .familysite img { width:40px; right:3.75%; margin-top:81px; position:absolute; z-index: 15;}
